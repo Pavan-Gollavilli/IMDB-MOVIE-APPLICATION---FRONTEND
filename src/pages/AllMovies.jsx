@@ -10,7 +10,7 @@ const AllMovies = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/movies");
+        const response = await axios.get("https://imdb-movie-application-backend.onrender.com/movies");
         const data = response.data;
 
         console.log("Fetched data:", data);
@@ -62,3 +62,4 @@ const AllMovies = () => {
 };
 
 export default AllMovies;
+
